@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Tailwind CSS</title>
+    <link href="path/to/your/tailwind.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+        <div class="container">
+            <div class="relative flex items-center justify-between">
+                <div class="px-4">
+                    <a href="#home" class="block py-6 text-lg font-bold text-primary">Noamene.T</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
+                        <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+                    </button>
+
+                    <nav id="nav-menu"
+                        class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home"
+                                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Page
+                                    d'acceuil</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about"
+                                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">à
+                                    propos de moi</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio"
+                                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Portfolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#clients"
+                                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Clients</a>
+                            </li>
+                            <li class="group">
+                                <a href="#blog"
+                                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Blog</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact"
+                                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Contacts</a>
+                            </li>
+                            <li class="mt-3 flex items-center pl-8 lg:mt-0">
+                                <div class="flex">
+                                    <span class="mr-2 text-sm text-slate-500">light</span>
+                                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                                    <label for="dark-toggle">
+                                        <div
+                                            class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                            <div
+                                                class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out">
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2 text-sm text-slate-500">dark</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36 dark:bg-dark">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <h1 class="text-base font-semibold text-primary md:text-xl">Halo à tous 👋<span
+                            class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl">Noamene.T</span>
+                    </h1>
+                    <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl">Developpeur & <span
+                            class="text-dark dark:text-white">Créateur de Contenu</span></h2>
+                    <p class="mb-10 font-medium leading-relaxed text-secondary">Apprendre la programmation Web est
+                        amusant. <span class="font-bold text-dark dark:text-white">Non!</span></p>
+
+                    <a href="#"
+                        class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Constactez-moi</a>
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relative mt-10 lg:right-0 lg:mt-9">
+                        <img src="https://img.freepik.com/photos-gratuite/homme-taille-moyenne-travaille-comme-agent-immobilier_23-2151064973.jpg?ga=GA1.1.1559641513.1735571977&semt=ais_hybrid"
+                            alt="Noamene.T" class="relative z-10 mx-auto max-w-full" />
+                        <span class="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="pt-36 pb-32 dark:bg-dark">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="mb-10 w-full px-4 lg:w-1/2">
+                    <h4 class="mb-3 text-lg font-bold uppercase text-primary">à propos de moi</h4>
+                    <h2 class="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-4xl">Apprenons la
+                        programmation!</h2>
+                    <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Id temporibus maiores sequi vitae saepe iusto deleniti!</p>
+                </div>
+                <div class="w-full px-4 lg:w-1/2">
+                    <h3 class="mb-4 text-2xl font-semibold text-dark dark:text-white lg:pt-10 lg:text-3xl">Soyons amis
+                    </h3>
+                    <p class="mb-6 text-base font-medium text-secondary lg:text-lg">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quos, hic animi quasi ipsum
+                        exercitationem ipsam incidunt voluptatem.
+                    </p>
+                    <div class="flex items-center">
+                        <!-- Youtube -->
+                        <a href="https://www.youtube.com/watch?v=JaqOcGioL4E" target="_blank"
+                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>YouTube</title>
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/" target="_blank"
+                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Instagram</title>
+                                <path
+                                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                            </svg>
+                        </a>
+
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/" target="_blank"
+                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Twitter</title>
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </a>
+
+                        <!-- TikTok -->
+                        <a href="https://tiktok.com/" target="_blank"
+                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>TikTok</title>
+                                <path
+                                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+                            </svg>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://linkedin.com/" target="_blank"
+                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>LinkedIn</title>
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section id="portfolio" class="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto mb-16 max-w-xl text-center">
+                    <h4 class="mb-2 text-lg font-semibold text-primary">Portfolio</h4>
+                    <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Derniers
+                        Projets</h2>
+                    <p class="text-md font-medium text-secondary md:text-lg">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus porro consequuntur alias,
+                        commodi nemo enim aliquam ipsam obcaecati? Assumenda, ipsam?
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="overflow-hidden rounded-md shadow-md">
+                        <img src="https://img.freepik.com/photos-premium/modele-conception-site-web-wireframe-page-atterrissage-pour-entreprises-site-page-site-layou-moderne_1197797-180872.jpg?ga=GA1.1.1559641513.1735571977&semt=ais_hybrid"
+                            alt="Landing Page" width="w-full" />
+                    </div>
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Landing Page </h3>
+                    <p class="text-base font-medium text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Eius, iusto! Aliquam, corporis.</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="overflow-hidden rounded-md shadow-md">
+                        <img src="https://img.freepik.com/photos-premium/banniere-commerce-electronique_1281315-2959.jpg?ga=GA1.1.1559641513.1735571977&semt=ais_hybrid"
+                            alt="E-Commerce" width="w-full" />
+                    </div>
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">E-Commerce</h3>
+                    <p class="text-base font-medium text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Eius, iusto! Aliquam, corporis.</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="overflow-hidden rounded-md shadow-md">
+                        <img src="https://img.freepik.com/photos-premium/modele-conception-site-web-wireframe-page-atterrissage-pour-entreprises-site-page-site-layou-moderne_1197797-181352.jpg?ga=GA1.1.1559641513.1735571977&semt=ais_hybrid"
+                            alt="Technical Documentation" width="w-full" />
+                    </div>
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Technical Documentation</h3>
+                    <p class="text-base font-medium text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Eius, iusto! Aliquam, corporis.</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="overflow-hidden rounded-md shadow-md">
+                        <img src="https://img.freepik.com/photos-premium/conception-site-web-pour-campagne-pour-droits-homme_950002-527664.jpg?ga=GA1.1.1559641513.1735571977&semt=ais_hybrid"
+                            alt="Tribute Page" width="w-full" />
+                    </div>
+                    <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Tribute Page</h3>
+                    <p class="text-base font-medium text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Eius, iusto! Aliquam, corporis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Clients Section Start -->
+    <section id="clients" class="bg-slate-800 pt-36 pb-32 dark:bg-slate-300">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto mb-16 text-center">
+                    <h4 class="mb-2 text-lg font-semibold text-primary">Clients</h4>
+                    <h2 class="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl">Déjà Client
+                    </h2>
+                    <p class="text-md font-medium text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Vero suscipit facilis velit!</p>
+                </div>
+            </div>
+
+            <div class="w-full px-4">
+                <div class="flex flex-wrap items-center justify-center">
+                    <a href="#"
+                        class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+                        <img src="https://banner2.cleanpng.com/20181120/elv/kisspng-google-chrome-portable-network-graphics-computer-i-pixilart-ruby-by-dieseldadog585-1713920324297.webp"
+                            alt="Google" />
+                    </a>
+                    <a href="#"
+                        class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+                        <img src="https://banner2.cleanpng.com/20180426/wtw/ave6uzut6.webp" alt="Wikipedia" />
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients Section End -->
+
+
+    <!-- Blog Section Start -->
+    <section id="blog" class="bg-slate-100 pt-36 pb-32 dark:bg-dark">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto mb-16 max-w-xl text-center">
+                    <h4 class="mb-2 text-lg font-semibold text-primary">Blog</h4>
+                    <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Messages</h2>
+                    <p class="text-md font-medium text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Nisi quisquam perspiciatis blanditiis dolores?</p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+                        <img src="https://gomycode.com/tn/wp-content/uploads/sites/26/2023/05/Logotype-1.svg"
+                            alt="Programming" class="w-full" />
+                        <div class="py-8 px-6">
+                            <h3>
+                                <a href="#"
+                                    class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Conseils pour apprendre la programmation</a>
+                            </h3>
+                            <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Placeat officia beatae quisquam?</p>
+                            <a href="#"
+                                class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="Mechanical Keyboard" class="w-full"/>
+                        <div class="py-8 px-6">
+                            <h3>
+                                <a href="#"
+                                    class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">tester vous et devenir pro</a>
+                            </h3>
+                            <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit. Modi facilis illum in.</p>
+                            <a href="#"
+                                class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3 ">
+                    <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
+                        <img src="data:image/png;base64,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"
+                            alt="Coffee" class="w-full" />
+                        <div class="py-8 px-6">
+                            <h3>
+                                <a href="#"
+                                    class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Préparez
+                                    votre café et commencez</a>
+                            </h3>
+                            <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Impedit, totam ipsum ea quam sequi velit sunt.</p>
+                            <a href="#"
+                                class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto mb-16 max-w-xl text-center">
+                    <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
+                    <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Contactez-nous
+                    </h2>
+                    <p class="text-md font-medium text-secondary md:text-lg">Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Blanditiis, sed.</p>
+                </div>
+            </div>
+
+            <form>
+                <div class="w-full lg:mx-auto lg:w-2/3">
+                    <div class="mb-8 w-full px-4">
+                        <label for="name" class="text-base font-bold text-primary">Nom</label>
+                        <input type="text" id="name"
+                            class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
+                    </div>
+                    <div class="mb-8 w-full px-4">
+                        <label for="email" class="text-base font-bold text-primary">Email</label>
+                        <input type="email" id="email"
+                            class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
+                    </div>
+                    <div class="mb-8 w-full px-4">
+                        <label for="message" class="text-base font-bold text-primary">Message</label>
+                        <textarea type="email" id="email"
+                            class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
+                    </div>
+                    <div class="w-full px-4">
+                        <button
+                            class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">Envoyer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-dark pt-24 pb-12">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
+                    <h2 class="mb-5 text-4xl font-bold text-white">Contacts</h2>
+                    <h3 class="mb-2 text-2xl font-bold">Contactez-nous</h3>
+                    <p>Moi@gmail.com</p>
+                    <p>Gomycode No. 2025>
+                    <p>Sousse
+                </div>
+                <div class="mb-12 w-full px-4 md:w-1/3">
+                    <h3 class="mb-5 text-xl font-semibold text-white">Compétences
+                        <ul class="text-slate-300">
+                            <li>
+                                <a href="#" class="mb-3 inline-block text-base hover:text-primary">Programmation</a>
+                            </li>
+                            <li>
+                                <a href="#" class="mb-3 inline-block text-base hover:text-primary">Teknologie</a>
+                            </li>
+                            <li>
+                                <a href="#" class="mb-3 inline-block text-base hover:text-primary">Nouvelle carriére</a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="mb-12 w-full px-4 md:w-1/3">
+                    <h3 class="mb-5 text-xl font-semibold text-white">Liens</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#home" class="mb-3 inline-block text-base hover:text-primary">Page d'acceuil</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="mb-3 inline-block text-base hover:text-primary">à propos de moi</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="mb-3 inline-block text-base hover:text-primary">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#clients" class="mb-3 inline-block text-base hover:text-primary">Clients</a>
+                        </li>
+                        <li>
+                            <a href="#blog" class="mb-3 inline-block text-base hover:text-primary">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="mb-3 inline-block text-base hover:text-primary">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full border-t border-slate-700 pt-10">
+                <div class="mb-5 flex items-center justify-center">
+                    <!-- Youtube -->
+                    <a href="https://youtube.com" target="_blank"
+                        class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>YouTube</title>
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/" target="_blank"
+                        class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>Instagram</title>
+                            <path
+                                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                        </svg>
+                    </a>
+
+                    <!-- Twitter -->
+                    <a href="https://twitter.com/" target="_blank"
+                        class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>Twitter</title>
+                            <path
+                                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                        </svg>
+                    </a>
+
+                    <!-- TikTok -->
+                    <a href="https://tiktok.com/" target="_blank"
+                        class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>TikTok</title>
+                            <path
+                                d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+                        </svg>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/" target="_blank"
+                        class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>LinkedIn</title>
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                </div>
+                <p class="text-center text-xs font-medium text-slate-500">
+                    Dibuat dengan <span class="text-pink-500">❤️</span> oleh <a href="https://instagram.com/"
+                        target="_blank" class="font-bold text-primary">Noamene.T</a>, utilisant
+                    <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+</body>
+
+</html>
